@@ -1,0 +1,691 @@
+[
+  {
+    "id": 99,
+    "title": "test",
+    "slug": "test",
+    "img": "https://www.ducksters.com/kidsmath/fractions14.gif",
+    "explanation": "Isang magandang umaga sa inyong lahat!",
+    "example": "this is an example"
+  },
+  {
+    "id": 1,
+    "title": "Introduction to fractions",
+    "slug": "introduction-to-fractions",
+    "img": "https://www.ducksters.com/kidsmath/fractions14.gif",
+    "explanation": "A fraction is a mathematical concept used to represent a part of a whole or a ratio between two values. It is composed of two parts: a numerator (the top part) and a denominator (the bottom part). The numerator represents the number of parts of the whole, while the denominator represents the total number of parts into which the whole is divided.",
+    "example": "Let's say you have a pizza and you want to share it with your 3 friends. You cut the pizza into 6 pieces. You can say that each friend gets 2 pieces of the pizza, which can be written as a fraction: 2/6. The numerator (2) tells you how many pieces of pizza each friend gets, and the denominator (6) tells you how many pieces the pizza was cut into. Another way to think about it is that each friend gets 2/6 of the pizza, or 1/3 of the pizza.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is a fraction?",
+        "options": [
+          { "id": 1, "answer": "A whole number", "isCorrect": false },
+          {
+            "id": 2,
+            "answer": "A part of a whole or a ratio between two values",
+            "isCorrect": true
+          },
+          { "id": 3, "answer": "An integer", "isCorrect": false },
+          { "id": 4, "answer": "A decimal", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What does the numerator of a fraction represent?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The total number of parts into which the whole is divided",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "The number of parts of the whole",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "The sum of two values",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "The product of two values",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What does the denominator of a fraction represent?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The number of parts of the whole",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "The total number of parts into which the whole is divided",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "The sum of two values",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "The product of two values",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Simplifying and Reducing Fractions",
+    "slug": "simplifying-and-reducing-fractions",
+    "img": "https://i.ytimg.com/vi/PcEwj5_v75g/maxresdefault.jpg",
+    "explanation": "Simplifying a fraction means to write it in its simplest form, by dividing both the numerator and denominator by their greatest common factor (GCF). Reducing a fraction means to simplify it to its lowest terms. In other words, a fraction is reduced when its numerator and denominator have no common factors other than 1.",
+    "example": "For example, the fraction 6/8 can be simplified to 3/4 by dividing both the numerator and denominator by their GCF of 2. It can be further reduced to its lowest terms by dividing both the numerator and denominator by their GCF of 3 and 4, which is 1. So the reduced form of the fraction 6/8 is 3/4.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What does simplifying a fraction mean?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Writing the fraction in its simplest form by dividing both the numerator and denominator by their greatest common factor",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Writing the fraction in its most complicated form",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Writing the fraction in its lowest terms",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Leaving the fraction unchanged",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What does reducing a fraction mean?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Writing the fraction in its simplest form by dividing both the numerator and denominator by their greatest common factor",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Writing the fraction in its most complicated form",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Writing the fraction in its lowest terms",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "answer": "Leaving the fraction unchanged",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the greatest common factor of the numerator and denominator in a fraction?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The smallest number that both the numerator and denominator are divisible by",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "The largest number that both the numerator and denominator are divisible by",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The sum of the numerator and denominator",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "The product of the numerator and denominator",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Adding and Subtracting Fractions",
+    "slug": "adding-and-subtracting-fractions",
+    "img": "https://i.ytimg.com/vi/-ijpdtjDNZw/maxresdefault.jpg",
+    "explanation": "To add or subtract fractions, the denominators (the bottom part of the fraction) must be equal. If they are not equal, the fractions must be first converted to have a common denominator. This is done by finding the least common multiple (LCM) of the denominators, and then multiplying the numerators and denominators of the fractions so that they have the same denominator. Finally, the numerators of the fractions are added or subtracted, and the result is written over the common denominator.",
+    "example": "For example, to add the fractions 1/2 and 1/3, the LCM of 2 and 3 must be found, which is 6. So, the fraction 1/2 is converted to 3/6 and 1/3 is converted to 2/6. Now, the two fractions have the same denominator, and their numerators can be added to get 5/6. This is the final answer.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What must be equal for two fractions to be added or subtracted?",
+        "options": [
+          { "id": 1, "answer": "The numerators", "isCorrect": false },
+          { "id": 2, "answer": "The denominators", "isCorrect": true },
+          {
+            "id": 3,
+            "answer": "Both the numerators and denominators",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is the least common multiple of two numbers?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The smallest number that is divisible by both the numbers",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "The largest number that is divisible by both the numbers",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The sum of both the numbers",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What must be done to two fractions to make their denominators equal before adding or subtracting them?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Convert them to have a common denominator by finding the LCM of the denominators",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Do nothing, the fractions can be added or subtracted as they are",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Multiply the numerators and denominators of the fractions by the same number",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Multiplying and Dividing Fractions",
+    "slug": "multiplying-and-dividing-fractions",
+    "img": "data:image/png;base64,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",
+    "explanation": "To multiply fractions, the numerators (the top part of the fraction) are multiplied and the denominators (the bottom part of the fraction) are multiplied. To divide fractions, one fraction is inverted (the numerator and denominator are swapped) and then multiplied by the other fraction. The result is the same as multiplying the first fraction by the reciprocal of the second fraction.",
+    "example": "For example, to multiply the fractions 2/3 and 1/4, the numerators are multiplied to get 2 * 1 = 2 and the denominators are multiplied to get 3 * 4 = 12. The final answer is 2/12 or 1/6. To divide the fraction 2/3 by 1/4, the second fraction is inverted to get 4/1, and then multiplied by the first fraction to get (2/3) * (4/1) = 8/3. This is the final answer.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What do you do to multiply two fractions?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Multiply the numerators and denominators",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Add the numerators and denominators",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Divide the numerators and denominators",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is the result of dividing one fraction by another fraction?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The same as multiplying the first fraction by the reciprocal of the second fraction",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "The same as multiplying the first fraction by the second fraction",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The same as dividing the numerators of the fractions",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the reciprocal of a fraction?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The fraction with its numerator and denominator swapped",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "The fraction with its numerator and denominator added",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The fraction with its numerator and denominator multiplied",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Mixed Numbers and Improper Fractions",
+    "slug": "mixed-numbers-and-improper-fractions",
+    "img": "https://ichef.bbci.co.uk/images/ic/1280xn/p0bh1xbn.png",
+    "explanation": "A mixed number is a whole number and a fraction combined, such as 3 1/2. An improper fraction is a fraction where the numerator is larger than the denominator, such as 7/3. Mixed numbers can be converted to improper fractions by multiplying the whole number by the denominator and adding the numerator. Improper fractions can be converted to mixed numbers by dividing the numerator by the denominator and writing the result as a whole number plus a fraction.",
+    "example": "For example, to convert the mixed number 3 1/2 to an improper fraction, you would multiply the whole number 3 by the denominator 2 to get 6, and then add the numerator 1 to get 7. The final answer is 7/2. To convert the improper fraction 7/3 to a mixed number, you would divide the numerator 7 by the denominator 3 to get 2 with a remainder of 1. The final answer is 2 1/3.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is a mixed number?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "A whole number and a fraction combined",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "A fraction where the numerator is larger than the denominator",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "A fraction where the numerator is equal to the denominator",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is an improper fraction?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "A fraction where the numerator is larger than the denominator",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "A whole number and a fraction combined",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "A fraction where the numerator is equal to the denominator",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the result of converting a mixed number to an improper fraction?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "A fraction where the numerator is equal to the whole number multiplied by the denominator plus the numerator",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "A fraction where the numerator is equal to the whole number divided by the denominator",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "A fraction where the numerator is equal to the whole number minus the denominator",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Comparing and Ordering Fractions",
+    "slug": "comparing-and-ordering-fractions",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEeCwj6ubDjNFBiG0a7EQH-QxpDXuC4fc68w&usqp=CAU",
+    "explanation": "Comparing fractions involves determining which fraction is larger or smaller than another fraction. To compare fractions, you can either cross-multiply the fractions to find an equivalent fraction with a common denominator or convert the fractions to decimals to compare their values. Ordering fractions involves arranging a set of fractions in ascending or descending order, from smallest to largest or largest to smallest.",
+    "example": "For example, to compare the fractions 1/2 and 1/3, you can cross-multiply to find equivalent fractions with a common denominator, such as 3/6 and 2/6. Since 3/6 is larger than 2/6, you can conclude that 1/2 is larger than 1/3. To order a set of fractions, such as 1/3, 1/2, and 2/3, you can arrange them in ascending order to find that 1/3 is the smallest, followed by 1/2, and then 2/3 which is the largest.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is the process of comparing fractions?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Determining which fraction is larger or smaller than another fraction",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Adding two fractions together",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Subtracting one fraction from another",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "How can you compare the value of two fractions?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Cross-multiplying the fractions to find an equivalent fraction with a common denominator or converting the fractions to decimals",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Dividing one fraction by another",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Adding the numerator and denominator of each fraction",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the process of ordering fractions?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Arranging a set of fractions in ascending or descending order, from smallest to largest or largest to smallest",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Finding the average of a set of fractions",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Determining which fraction is closest to 1",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Converting Decimals to Fractions and Vice Versa",
+    "slug": "converting-decimals-to-fractions-and-vice-versa",
+    "img": "https://i.ytimg.com/vi/xYZQaRf_Rz8/maxresdefault.jpg",
+    "explanation": "Converting decimals to fractions involves expressing a decimal number as a fraction with a denominator of a power of 10. To do this, you can either write the decimal as a fraction with a numerator that is the decimal number multiplied by a power of 10, or use the place value of the decimal to determine the denominator. Converting fractions to decimals involves dividing the numerator by the denominator. The decimal representation of the fraction will have as many decimal places as the denominator has factors of 10.",
+    "example": "For example, to convert the decimal 0.5 to a fraction, you can write it as a fraction with a numerator of 5 and a denominator of 10. The fraction 0.5 can also be represented as the fraction 5/10. To convert the fraction 3/4 to a decimal, you can divide the numerator (3) by the denominator (4) to get 0.75. The decimal representation of the fraction 3/4 has two decimal places, as the denominator 4 has two factors of 10.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is the process of converting decimals to fractions?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Expressing a decimal number as a fraction with a denominator of a power of 10",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Expressing a decimal number as a fraction with a numerator that is the decimal number divided by a power of 10",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Rounding the decimal number to the nearest whole number",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is the process of converting fractions to decimals?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Dividing the numerator by the denominator",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Multiplying the numerator and denominator by a power of 10",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Adding the numerator and denominator of the fraction",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "How many decimal places will the decimal representation of a fraction have?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "As many decimal places as the denominator has factors of 10",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "As many decimal places as the numerator has factors of 10",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The decimal representation of a fraction will always have two decimal places",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Least Common Multiple and Greatest Common Factor",
+    "slug": "least-common-multiple-and-greatest-common-factor",
+    "img": "https://decimal.info/Images/lcm-and-gcf.png",
+    "explanation": "The least common multiple (LCM) of two or more numbers is the smallest number that is a multiple of all the numbers. The greatest common factor (GCF) of two or more numbers is the largest number that divides into all the numbers without leaving a remainder. Finding the LCM and GCF of two or more numbers is important for simplifying and reducing fractions, solving problems in real-world situations, and understanding mathematical concepts related to ratios and proportions.",
+    "example": "For example, the LCM of 4 and 6 is 12, because 12 is the smallest number that is a multiple of both 4 and 6. The GCF of 4 and 6 is 2, because 2 is the largest number that divides into both 4 and 6 without leaving a remainder. If you want to simplify the fraction 8/12, you can divide both the numerator and denominator by the GCF of 8 and 12, which is 4, to get the simplified fraction 2/3.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is the least common multiple (LCM) of two or more numbers?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The smallest number that is a multiple of all the numbers",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "The largest number that divides into all the numbers",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The sum of all the numbers",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is the greatest common factor (GCF) of two or more numbers?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "The largest number that divides into all the numbers without leaving a remainder",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "The smallest number that is a multiple of all the numbers",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "The product of all the numbers",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Why is finding the LCM and GCF of two or more numbers important?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "For simplifying and reducing fractions, solving problems in real-world situations, and understanding mathematical concepts related to ratios and proportions",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "For solving geometry problems",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "For finding the slope of a line",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Fraction Word Problems",
+    "slug": "fraction-word-problems",
+    "img": "https://i.ytimg.com/vi/hwGo6wAreVc/maxresdefault.jpg",
+    "explanation": "Fraction word problems are mathematical problems that involve fractions and real-world situations. They require students to read, understand, and translate the problem into mathematical terms, solve the problem using mathematical operations with fractions, and interpret the solution in real-world terms. Fraction word problems can be challenging, as they often involve multiple steps, estimation, and interpretation of the results.",
+    "example": "For example, consider the following fraction word problem: John has 4 pizzas, each pizza has 8 slices. How many slices does John have in total? To solve this problem, you need to multiply the number of pizzas by the number of slices per pizza. So, 4 x 8 = 32. This means that John has 32 slices of pizza in total.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "What are fraction word problems?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Mathematical problems that involve fractions and real-world situations",
+            "isCorrect": true
+          },
+          { "id": 2, "answer": "Geometry problems", "isCorrect": false },
+          {
+            "id": 3,
+            "answer": "Problems that involve only decimals",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What skills are required to solve fraction word problems?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Reading, understanding, and translating the problem into mathematical terms, solving the problem using mathematical operations with fractions, and interpreting the solution in real-world terms",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Solving problems only with addition and subtraction",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Finding the slope of a line",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Are fraction word problems challenging?",
+        "options": [
+          {
+            "id": 1,
+            "answer": "Yes, they often involve multiple steps, estimation, and interpretation of the results",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "No, they are easy to solve",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "It depends on the problem",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "What is the solution to the following fraction word problem: Sarah has 3 cakes, each cake has 6 slices. How many slices does Sarah have in total?",
+        "options": [
+          { "id": 1, "answer": "18", "isCorrect": true },
+          { "id": 2, "answer": "20", "isCorrect": false },
+          { "id": 3, "answer": "24", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is the solution to the following fraction word problem: Maria has 5 pizzas, each pizza has 8 slices. How many slices does Maria have in total?",
+        "options": [
+          { "id": 1, "answer": "40", "isCorrect": true },
+          { "id": 2, "answer": "35", "isCorrect": false },
+          { "id": 3, "answer": "30", "isCorrect": false }
+        ]
+      }
+    ]
+  }
+]
