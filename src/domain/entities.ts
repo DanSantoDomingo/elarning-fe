@@ -2,21 +2,26 @@ export type Lesson = {
   readonly id: number;
   readonly slug: string;
   title: string;
-  img?: string;
-  explanation: string;
-  example: string;
-  questions: Array<Question>;
+  imageUrl?: string;
+  content: string;
+  strippedContent: string;
+  hasQuiz: boolean;
+  // example: string;
+  // questions: Array<Question>;
 };
 
 export type Question = {
   readonly id: number;
-  text: string;
-  options: Array<Option>;
+  readonly lessonSlug: string;
+  readonly lessonId: number;
+  content: string;
+  solution: string;
+  choices: Array<QuestionChoice>;
 };
 
-export type Option = {
+export type QuestionChoice = {
   readonly id: number;
-  answer: string;
+  content: string;
   isCorrect: boolean;
 };
 

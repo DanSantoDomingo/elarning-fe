@@ -11,10 +11,10 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { FileBasedLessonService } from "@/services/LessonService";
+import { APILessonService } from "@/services/LessonService";
 import LessonCard from "@/components/LessonCard.vue";
 
-let lessonService = new FileBasedLessonService();
+let lessonService = new APILessonService();
 const lessons = ref(await lessonService.getLessons());
 </script>
 

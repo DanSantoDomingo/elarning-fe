@@ -18,7 +18,7 @@ const handleLogin = () => {
 <template>
   <div class="d-flex justify-content-center">
     <div class="text-center pt-5 w-50">
-      <h4>Can you tell me your name?? 💭</h4>
+      <h4>Please enter your name 💭</h4>
       <form @submit.prevent="handleLogin" class="mt-3">
         <input
           v-model.trim="userName"

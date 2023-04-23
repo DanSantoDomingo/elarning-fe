@@ -1,11 +1,11 @@
 <template>
   <div
     class="card border border-primary"
-    @click="goToLesson(props.lesson.slug)"
+    @click="goToLesson(lesson.slug)"
   >
-    <img :src="props.lesson.img" class="card-img-top" alt="..." />
+    <img :src="lesson?.imageUrl" class="card-img-top" alt="..." />
     <div class="card-body">
-      <h5 class="card-title">{{ props.lesson.title }}</h5>
+      <h5 class="card-title">{{ lesson.title }}</h5>
       <p class="card-text"></p>
     </div>
   </div>
@@ -15,11 +15,12 @@
 import { useRouter } from "vue-router";
 
 const router = useRouter();
-const props = defineProps(["lesson"]);
+defineProps(["lesson"]);
 
 const goToLesson = (slug: string) => {
   router.push(`/lesson/${slug}`);
 };
+
 </script>
 
 <style scoped>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h1 class="text-center">{{ lesson?.title }} quiz</h1>
+      <h1 class="text-center">{{ topicTitle }} Quiz</h1>
       <div class="progress" style="height: 5px">
         <div
           class="progress-bar bg-success"
@@ -43,20 +43,25 @@
 import { ref, computed } from "vue";
 import QuestionItem from "./QuestionItem.vue";
 import QuizResult from "./QuizResult.vue";
-import type { Option, Question } from "@/domain/entities";
-import { shuffleObjects } from "@/domain/utils";
-import { FileBasedLessonService } from "@/services/LessonService";
+import type { QuestionChoice, Question } from "@/domain/entities";
+import { shuffleObjects, unSlugify } from "@/domain/utils";
+import { QuestionService } from "@/services/QuestionService";
 
-const props = defineProps(["lessonSlug"]);
+
+
+const props = defineProps(["lessonSlug", "lessonId"]);
 
 const currentQuestionIndex = ref(0);
 const numCorrectAnswers = ref(0);
 const showResult = ref(false);
 
-const lessonService = new FileBasedLessonService();
-const lesson = await lessonService.getLesson(props.lessonSlug);
+let topicTitle = unSlugify(props.lessonSlug)
 
-let questions = shuffleObjects(lesson?.questions as Question[]) as Question[];
+
+const questionService = new QuestionService();
+const original_questions = await questionService.getQuestions(props.lessonId as number);
+
+let questions = shuffleObjects(original_questions) as Question[];
 
 const barPercentage = computed(
   () => `${(currentQuestionIndex.value / questions.length) * 100}%`
@@ -68,7 +73,7 @@ function getQuestion(questions: Question[]): Question | undefined {
 
 let currentQuestion = getQuestion(questions);
 let currentQuestionOptions = shuffleObjects(
-  currentQuestion?.options as Option[]
+  currentQuestion?.choices as QuestionChoice[]
 );
 
 const onOptionSelected = (isCorrect: boolean) => {
@@ -82,12 +87,12 @@ const onOptionSelected = (isCorrect: boolean) => {
   }
   currentQuestionIndex.value++;
   currentQuestion = getQuestion(questions);
-  currentQuestionOptions = shuffleObjects(currentQuestion?.options as Option[]);
+  currentQuestionOptions = shuffleObjects(currentQuestion?.choices as QuestionChoice[]);
 };
 
 const onRetakeQuiz = () => {
   currentQuestionIndex.value = 0;
-  questions = shuffleObjects(lesson?.questions as Question[]) as Question[];
+  questions = shuffleObjects(original_questions) as Question[];
   showResult.value = false;
   numCorrectAnswers.value = 0;
 };

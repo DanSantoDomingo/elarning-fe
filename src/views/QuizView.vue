@@ -2,7 +2,7 @@
   <div>
     <Suspense>
       <template #default>
-        <QuizItem :lessonSlug="lessonSlug" />
+        <QuizItem :lessonSlug="lessonSlug" :lessonId="lessonId" />
       </template>
       <template #fallback>
         <LessonItemSkeleton />
@@ -19,6 +19,7 @@ import LessonItemSkeleton from "@/components/LessonItemSkeleton.vue";
 const route = useRoute();
 
 const lessonSlug = route.params.slug as string;
+const lessonId = route.params.lessonId;
 </script>
 
 <style scoped></style>

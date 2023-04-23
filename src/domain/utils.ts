@@ -7,3 +7,13 @@ export const shuffleObjects = (array: Array<object>) => {
   }
   return array;
 };
+
+
+export const unSlugify = (text: string) => {
+  let words = text.split("-")
+  const formattedWords: Array<string> = []
+  words.forEach(word => {
+    formattedWords.push(word.toLowerCase().charAt(0).toUpperCase() + word.slice(1))
+  })
+  return formattedWords.join(" ")
+}

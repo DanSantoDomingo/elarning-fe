@@ -2,22 +2,38 @@ import type { Lesson } from "@/domain/entities";
 import type ILessonService from "@/services/ILessonService";
 import lessons from "@/domain/lessons.json";
 
-export class FileBasedLessonService implements ILessonService {
+
+
+export class APILessonService implements ILessonService {
+  private baseUrl = 'http://localhost:8000/api/v1/lessons';
+
   public async getLesson(slug: string): Promise<Lesson | undefined> {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const lesson = lessons.find((t) => t.slug === slug) as Lesson;
-        resolve(lesson);
-      }, 500);
-    });
+    try {
+      const response = await fetch(`${this.baseUrl}/${slug}`);
+      if (response.ok) {
+        const lesson = await response.json();
+        return lesson;
+      } else {
+        throw new Error(`Failed to fetch lesson with slug: ${slug}`);
+      }
+    } catch (error) {
+      console.error(error);
+      return undefined;
+    }
   }
 
   public async getLessons(): Promise<Array<Lesson>> {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const lessonsList = lessons as Lesson[];
-        resolve(lessonsList);
-      }, 500);
-    });
+    try {
+      const response = await fetch(this.baseUrl);
+      if (response.ok) {
+        const lessons = await response.json();
+        return lessons;
+      } else {
+        throw new Error('Failed to fetch lessons');
+      }
+    } catch (error) {
+      console.error(error);
+      return [];
+    }
   }
 }

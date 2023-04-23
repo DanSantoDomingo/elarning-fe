@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1 class="fs-4 mt-4 text-center">{{ question.text }}</h1>
+    <h1 class="fs-4 mt-4 text-center" v-html="question.content"></h1>
     <div class="d-grid gap-2 mb-1" v-for="option in options" :key="option.id">
       <div
         class="alert alert-light border shadow-sm"
         @click="emitSelectedOption(option.isCorrect)"
       >
-        {{ option.answer }}
+        {{ option.content }}
       </div>
     </div>
   </div>
