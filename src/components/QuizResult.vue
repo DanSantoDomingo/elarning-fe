@@ -12,20 +12,38 @@
         Retake Quiz
       </button>
     </div>
+    <div>
+      <button class="btn btn-sm btn-info mt-2" @click="toggleExplanation">
+        {{ showExplanation ? "Hide" : "Show" }} Explanation
+      </button>
+    </div>
+    <div v-if="showExplanation">
+      
+      <div v-for="question in questions" :key="question.id" class="explanation-container">
+        <ExplanationItem :question="question"/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import confetti from "canvas-confetti";
+import ExplanationItem from "@/components/ExplanationItem.vue"
 
-const props = defineProps(["quizLength", "score"]);
+
+const props = defineProps(["quizLength", "score", "questions"]);
 const emit = defineEmits(["retakeQuiz"]);
 const scoreMessage = ref("Your Score");
 const scoreAnimationClass = ref("");
+const showExplanation = ref(false)
 
 const end = Date.now() + 1 * 1000;
 const colors = ["#56cc9d", "#212529"];
+
+const toggleExplanation = () => {
+  showExplanation.value = !showExplanation.value;
+}
 
 const createConfetti = (angle: number, origin: { x: number }) => {
   return confetti({

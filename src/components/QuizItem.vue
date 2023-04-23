@@ -32,6 +32,7 @@
         <QuizResult
           :quizLength="questions.length"
           :score="numCorrectAnswers"
+          :questions="originalQuestions"
           @retake-quiz="onRetakeQuiz"
         />
       </div>
@@ -59,9 +60,9 @@ let topicTitle = unSlugify(props.lessonSlug)
 
 
 const questionService = new QuestionService();
-const original_questions = await questionService.getQuestions(props.lessonId as number);
+const originalQuestions = await questionService.getQuestions(props.lessonId as number);
 
-let questions = shuffleObjects(original_questions) as Question[];
+let questions = shuffleObjects(originalQuestions) as Question[];
 
 const barPercentage = computed(
   () => `${(currentQuestionIndex.value / questions.length) * 100}%`
@@ -92,7 +93,7 @@ const onOptionSelected = (isCorrect: boolean) => {
 
 const onRetakeQuiz = () => {
   currentQuestionIndex.value = 0;
-  questions = shuffleObjects(original_questions) as Question[];
+  questions = shuffleObjects(originalQuestions) as Question[];
   showResult.value = false;
   numCorrectAnswers.value = 0;
 };
