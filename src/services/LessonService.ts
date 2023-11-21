@@ -5,7 +5,7 @@ import lessons from "@/domain/lessons.json";
 
 
 export class APILessonService implements ILessonService {
-  private baseUrl = 'http://localhost:8000/api/v1/lessons';
+  private baseUrl = '/api/v1/lessons';
 
   public async getLesson(slug: string): Promise<Lesson | undefined> {
     try {

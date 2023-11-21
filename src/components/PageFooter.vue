@@ -1,7 +1,7 @@
 <template>
   <footer class="py-3 my-4">
     <hr />
-    <p class="text-center text-muted">© {{ year }} DRSD All rights reserved.</p>
+    <p class="text-center text-muted">© {{ year }} Dea Ann Sto. Domingo All rights reserved.</p>
   </footer>
 </template>
 
